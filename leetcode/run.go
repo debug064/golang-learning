@@ -13,6 +13,9 @@ func main() {
 		return
 	}
 	name := os.Args[1]
+	if name == "" {
+		name = "283"
+	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
 	} else if name == "gcdOfStrings" {
@@ -26,5 +29,9 @@ func main() {
 		fmt.Println(gcdOfStrings("ABABAB", "ABAB"))
 	} else if name == "reverseList" {
 		test_reverseList()
+	} else if name == "104" {
+		test_maxDepth()
+	} else if name == "283" {
+		test_moveZeroes()
 	}
 }
