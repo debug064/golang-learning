@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "1431"
+		name = "605"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -35,5 +35,7 @@ func main() {
 		test_moveZeroes()
 	} else if name == "1431" {
 		test_kidsWithCandies()
+	} else if name == "605" {
+		test_canPlaceFlowers()
 	}
 }
