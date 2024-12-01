@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "605"
+		name = "53"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -37,5 +37,7 @@ func main() {
 		test_kidsWithCandies()
 	} else if name == "605" {
 		test_canPlaceFlowers()
+	} else if name == "53" {
+		test_maxSubArray()
 	}
 }
