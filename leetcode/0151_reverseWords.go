@@ -93,18 +93,17 @@ func reverseWords2(s string) string {
 func reverseWords3(s string) string {
 	var sb strings.Builder
 	res := strings.Split(s, " ")
-	added := false
+	addSpace := false
 	for i := len(res) - 1; i >= 0; i-- {
 		if len(res[i]) == 0 {
 			continue
 		}
-		if added {
+		if addSpace {
 			sb.WriteRune(' ')
-			added = false
+			addSpace = false
 		}
 		sb.WriteString(res[i])
-		added = true
-
+		addSpace = true
 	}
 
 	return sb.String()

@@ -64,4 +64,6 @@ func main() {
 	LoopNetwork()
 
 	fmt.Println(GetOutboundIP())
+
+	test_fibonacci()
 }
