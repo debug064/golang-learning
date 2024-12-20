@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "345"
+		name = "151"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -41,5 +41,7 @@ func main() {
 		test_maxSubArray()
 	} else if name == "345" {
 		test_reverseVowels()
+	} else if name == "151" {
+		test_reverseWords()
 	}
 }
