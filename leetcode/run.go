@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "151"
+		name = "443"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -43,5 +43,11 @@ func main() {
 		test_reverseVowels()
 	} else if name == "151" {
 		test_reverseWords()
+	} else if name == "238" {
+		testProductExceptSelf()
+	} else if name == "334" {
+		testIncreasingTriplet()
+	} else if name == "443" {
+		testCompress()
 	}
 }
