@@ -45,3 +45,8 @@ add to settings.json
     "go.goroot": "c:/sdk/go"
 }
 and restart vscode
+
+
+
+for c++
+pacman -S mingw-w64-x86_64-toolchain
