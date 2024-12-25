@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "443"
+		name = "392"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -49,5 +49,7 @@ func main() {
 		testIncreasingTriplet()
 	} else if name == "443" {
 		testCompress()
+	} else if name == "392" {
+		testIsSubsequence()
 	}
 }
