@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "392"
+		name = "1493"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -51,5 +51,18 @@ func main() {
 		testCompress()
 	} else if name == "392" {
 		testIsSubsequence()
+	} else if name == "11" {
+		testMaxArea()
+	} else if name == "1679" {
+		testMaxOperations()
+	} else if name == "643" {
+		testFindMaxAverage()
+	} else if name == "1456" {
+		testMaxVowels()
+	} else if name == "1004" {
+		testLongestOnes()
+	} else if name == "1493" {
+		testLongestSubarray()
 	}
+
 }
