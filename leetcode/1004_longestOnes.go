@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Sliding Window
 // https://leetcode.com/problems/max-consecutive-ones-iii/description/?envType=study-plan-v2&envId=leetcode-75
 
 func longestOnes(nums []int, k int) int {

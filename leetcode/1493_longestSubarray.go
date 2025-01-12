@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Sliding Window
 // https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/?envType=study-plan-v2&envId=leetcode-75
 
 func longestSubarray(nums []int) int {
@@ -23,7 +24,6 @@ func longestSubarray(nums []int) int {
 			}
 		}
 		r = i
-
 	}
 	return res - nums[r]
 }

@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "1493"
+		name = "1732"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -63,6 +63,8 @@ func main() {
 		testLongestOnes()
 	} else if name == "1493" {
 		testLongestSubarray()
+	} else if name == "1732" {
+		testPivotIndex()
 	}
 
 }

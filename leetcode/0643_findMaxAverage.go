@@ -6,7 +6,9 @@ import (
 	"strings"
 )
 
+// Sliding Window
 // https://leetcode.com/problems/maximum-average-subarray-i/?envType=study-plan-v2&envId=leetcode-75
+
 func findMaxAverage(nums []int, k int) float64 {
 	if k <= 0 {
 		return 0
