@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "1732"
+		name = "901"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -63,8 +63,22 @@ func main() {
 		testLongestOnes()
 	} else if name == "1493" {
 		testLongestSubarray()
-	} else if name == "1732" {
+	} else if name == "724" {
 		testPivotIndex()
+	} else if name == "1732" {
+		testLargestAltitude()
+	} else if name == "2215" {
+		testFindDifference()
+	} else if name == "1207" {
+		testUniqueOccurrences()
+	} else if name == "2352" {
+		testEqualPairs()
+	} else if name == "2390" {
+		testRemoveStars()
+	} else if name == "739" {
+		testDailyTemperatures()
+	} else if name == "901" {
+		testStockSpanner()
 	}
 
 }

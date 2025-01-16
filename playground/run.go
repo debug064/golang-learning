@@ -66,4 +66,6 @@ func main() {
 	fmt.Println(GetOutboundIP())
 
 	test_fibonacci()
+
+	test_MonotonicStack()
 }
