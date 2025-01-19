@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "901"
+		name = "394"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -79,6 +79,10 @@ func main() {
 		testDailyTemperatures()
 	} else if name == "901" {
 		testStockSpanner()
+	} else if name == "735" {
+		testAsteroidCollision()
+	} else if name == "394" {
+		testDecodeString()
 	}
 
 }
