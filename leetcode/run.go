@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "394"
+		name = "17"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -83,6 +83,10 @@ func main() {
 		testAsteroidCollision()
 	} else if name == "394" {
 		testDecodeString()
+	} else if name == "216" {
+		testCombinationSum3()
+	} else if name == "17" {
+		testLetterCombinations()
 	}
 
 }
