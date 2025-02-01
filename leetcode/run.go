@@ -9,12 +9,12 @@ func main() {
 	fmt.Println("Hello")
 	fmt.Println(len(os.Args), os.Args)
 	if len(os.Args) <= 1 {
-		fmt.Println("Need test name")
+		fmt.Println("Need test number/name")
 		return
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "17"
+		name = "1372"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -87,6 +87,20 @@ func main() {
 		testCombinationSum3()
 	} else if name == "17" {
 		testLetterCombinations()
+	} else if name == "1137" {
+		testTribonacci()
+	} else if name == "746" {
+		testMinCostClimbingStairs()
+	} else if name == "198" {
+		testRob()
+	} else if name == "872" {
+		test_leafSimilar()
+	} else if name == "1448" {
+		test_goodNodes()
+	} else if name == "437" {
+		test_pathSum()
+	} else if name == "1372" {
+		test_longestZigZag()
 	}
 
 }
