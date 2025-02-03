@@ -49,3 +49,17 @@ func stringToTree(str string) *TreeNode {
 	}
 	return root
 }
+
+func FindInTree(node *TreeNode, val int) *TreeNode {
+	if node == nil {
+		return nil
+	}
+	if node.Val == val {
+		return node
+	}
+	res := FindInTree(node.Left, val)
+	if res == nil {
+		res = FindInTree(node.Right, val)
+	}
+	return res
+}

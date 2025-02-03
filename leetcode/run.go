@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "1372"
+		name = "1161"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -101,6 +101,12 @@ func main() {
 		test_pathSum()
 	} else if name == "1372" {
 		test_longestZigZag()
+	} else if name == "236" {
+		test_lowestCommonAncestor()
+	} else if name == "199" {
+		test_rightSideView()
+	} else if name == "1161" {
+		test_maxLevelSum()
 	}
 
 }
