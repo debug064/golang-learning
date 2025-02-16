@@ -14,19 +14,12 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "450"
+		name = "1071"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
-	} else if name == "gcdOfStrings" {
-		fmt.Println(gcdOfStrings("ABABABAB", "ABAB"))
-		fmt.Println(gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"))
-		fmt.Println(gcdOfStrings("aaaaa", "aa"))
-		fmt.Println(gcdOfStrings("Hello", "world"))
-		fmt.Println(gcdOfStrings("Hello", "abab"))
-
-		fmt.Println(gcdOfStrings("aaaaa", "aaa"))
-		fmt.Println(gcdOfStrings("ABABAB", "ABAB"))
+	} else if name == "1071" {
+		test_gcdOfStrings()
 	} else if name == "reverseList" {
 		test_reverseList()
 	} else if name == "104" {

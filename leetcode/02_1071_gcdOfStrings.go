@@ -1,6 +1,9 @@
 package main
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 func gcdOfStringsV(str1 string, str2 string) string {
 
@@ -45,4 +48,18 @@ func gcdOfStrings(str1 string, str2 string) string {
 	}
 
 	return ""
+}
+
+func test_gcdOfStrings() {
+	fmt.Println(gcdOfStrings("ABABABAB", "ABAB"))
+	fmt.Println(gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX"))
+	fmt.Println(gcdOfStrings("aaaaa", "aa"))
+	fmt.Println(gcdOfStrings("Hello", "world"))
+	fmt.Println(gcdOfStrings("Hello", "abab"))
+
+	fmt.Println(gcdOfStrings("aaaaa", "aaa"))
+	fmt.Println(gcdOfStrings("ABABAB", "ABAB"))
+
+	fmt.Println(gcdOfStringsV("aaaaa", "aaa"))
+	fmt.Println(gcdOfStringsV("ABABAB", "ABAB"))
 }
