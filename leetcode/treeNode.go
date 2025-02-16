@@ -14,6 +14,37 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+func treeToString(root *TreeNode) string {
+	if root == nil {
+		return ""
+	}
+	res := "" // var sb strings.Builder
+	var nodes []*TreeNode
+	var nodes2 []*TreeNode
+	nodes = append(nodes, root)
+	for len(nodes) > 0 {
+		if len(res) > 0 {
+			res += ","
+		}
+		node := nodes[0]
+		if node == nil {
+			res += "null"
+		} else {
+			res += strconv.Itoa(node.Val)
+			nodes2 = append(nodes2, node.Left, node.Right)
+		}
+
+		nodes = nodes[1:]
+		if len(nodes) == 0 {
+			nodes, nodes2 = nodes2, nodes
+		}
+	}
+	for len(res) > 5 && res[len(res)-5:] == ",null" {
+		res = res[:len(res)-5]
+	}
+	return res
+}
+
 func stringToTree(str string) *TreeNode {
 	root := &TreeNode{}
 	tokens := strings.Split(str, ",")

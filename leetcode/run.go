@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "1161"
+		name = "450"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -107,6 +107,10 @@ func main() {
 		test_rightSideView()
 	} else if name == "1161" {
 		test_maxLevelSum()
+	} else if name == "700" {
+		test_searchBST()
+	} else if name == "450" {
+		test_deleteNode()
 	}
 
 }
