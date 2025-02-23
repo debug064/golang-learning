@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "1071"
+		name = "649"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -104,6 +104,10 @@ func main() {
 		test_searchBST()
 	} else if name == "450" {
 		test_deleteNode()
+	} else if name == "993" {
+		test_recentCalls()
+	} else if name == "649" {
+		test_predictPartyVictory()
 	}
 
 }
