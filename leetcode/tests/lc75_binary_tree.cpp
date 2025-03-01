@@ -265,7 +265,28 @@ class Solution450_2 {
         TreeNode* deleteNode(TreeNode* root, int key) {
             if (root == nullptr)
                 return nullptr;
-            
+            if(key < root->val)
+                root->left = deleteNode(root->left, key);
+            else if (key > root->val)
+                root->right = deleteNode(root->right, key);
+            else {
+                if (root->left == nullptr) {
+                    auto tmp = root->right;
+                    delete root;
+                    root = tmp;
+                } else if (root->right == nullptr) {
+                    auto tmp = root->left;
+                    delete root;
+                    root = tmp;
+                }
+                else {
+                    auto tmp = root->right;
+                    while (tmp->left)
+                        tmp = tmp->left;
+                    root->val = tmp->val;
+                    root->right = deleteNode(root->right, root->val);
+                }
+            }
             
             return root;
         }
