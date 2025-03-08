@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "2095"
+		name = "2130"
 	}
 	if name == "mergeAlternately" {
 		fmt.Println(mergeAlternately("Hello", "world"))
@@ -110,6 +110,10 @@ func main() {
 		test_predictPartyVictory()
 	} else if name == "2095" {
 		test_deleteMiddle()
+	} else if name == "328" {
+		test_oddEvenList()
+	} else if name == "2130" {
+		test_pairSum()
 	}
 
 }
