@@ -14,7 +14,7 @@ func main() {
 	}
 	name := os.Args[1]
 	if name == "" {
-		name = "547"
+		name = "1466"
 	}
 
 	tests := map[string]func(){
@@ -68,6 +68,7 @@ func main() {
 		"2130":        test_pairSum,
 		"841":         test_canVisitAllRooms,
 		"547":         test_findCircleNum,
+		"1466":        test_minReorder,
 	}
 	tests[name]()
 	// if name == "mergeAlternately" {
